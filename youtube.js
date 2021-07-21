@@ -3,6 +3,11 @@ const observer = new MutationObserver((mutations, obs) => {
   if (comments) {
     comments.remove();
   }
+
+  const chat = document.getElementById("chat");
+  if(chat){
+    chat.remove();
+  }
 });
 
 observer.observe(document, {
