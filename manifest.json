@@ -10,5 +10,11 @@
             "all_frames": true,
             "run_at": "document_start"
         }
-    ]
+    ],
+    "icons": {
+        "16": "assets/icon_16.ico",
+        "24": "assets/icon_24.ico",
+        "32": "assets/icon_32.ico",
+        "64": "assets/icon_64.ico"
+    }
   }
