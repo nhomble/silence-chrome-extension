@@ -9,6 +9,12 @@
             "js": ["youtube.js"],
             "all_frames": true,
             "run_at": "document_start"
+        },
+        {
+            "matches": ["*://*.linkedin.com/*"],
+            "js": ["linkedin.js"],
+            "all_frames": true,
+            "run_at": "document_start"
         }
     ],
     "icons": {
