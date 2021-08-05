@@ -1,7 +1,8 @@
 const observer = new MutationObserver((mutations, obs) => {
-    const main = document.getElementById("main");
-    if (main) {
-        main.remove();
+    if(window.location.href.includes(".com/feed")){
+      $("main").hide();
+    } else {
+      $("main").show();
     }
   });
   
