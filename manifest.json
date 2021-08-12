@@ -15,6 +15,12 @@
             "js": ["lib/jquery-3.6.0.js", "linkedin.js"],
             "all_frames": true,
             "run_at": "document_start"
+        },
+        {
+            "matches": ["*://*.facebook.com/*"],
+            "js": ["facebook.js"],
+            "all_frames": true,
+            "run_at": "document_start"
         }
     ],
     "icons": {
