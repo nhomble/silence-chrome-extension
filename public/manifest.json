@@ -1,0 +1,18 @@
+{
+    "name": "silence",
+    "description": "mute commentary from websites",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "icons": {
+        "16": "assets/icon_16.ico",
+        "24": "assets/icon_24.ico",
+        "32": "assets/icon_32.ico",
+        "48": "assets/icon_48.png"
+    }
+  }
