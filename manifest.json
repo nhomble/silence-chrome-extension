@@ -6,19 +6,19 @@
     "content_scripts": [
         {
             "matches": ["*://*.youtube.com/*"],
-            "js": ["youtube.js"],
+            "js": ["dist/youtube.js"],
             "all_frames": true,
             "run_at": "document_start"
         },
         {
             "matches": ["*://*.linkedin.com/*"],
-            "js": ["lib/jquery-3.6.0.js", "linkedin.js"],
+            "js": ["lib/jquery-3.6.0.js", "dist/linkedin.js"],
             "all_frames": true,
             "run_at": "document_start"
         },
         {
             "matches": ["*://*.facebook.com/*"],
-            "js": ["facebook.js"],
+            "js": ["dist/facebook.js"],
             "all_frames": true,
             "run_at": "document_start"
         }
