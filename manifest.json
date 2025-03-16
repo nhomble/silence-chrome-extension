@@ -45,5 +45,5 @@
             "128": "assets/icon_128.png"
         }
     },
-    "permissions": ["tabs"]
+    "permissions": ["tabs", "activeTab", "storage"]
 }
