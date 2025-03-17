@@ -1,7 +1,7 @@
 {
     "name": "silence",
     "description": "mute commentary from websites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "manifest_version": 3,
     "content_scripts": [
         {
