@@ -17,13 +17,6 @@
             "css": ["src/ui.css"],
             "all_frames": true,
             "run_at": "document_start"
-        },
-        {
-            "matches": ["*://*.facebook.com/*"],
-            "js": ["dist/facebook.js"],
-            "css": ["src/ui.css"],
-            "all_frames": true,
-            "run_at": "document_start"
         }
     ],
     "icons": {
