@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #f8f9fa;
+}
+
+#extension-ui {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+}
+
+#website-title {
+  background-color: #afc5ff; /* Light blue from palette */
+  color: #333;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  display: block;
+}
+
+#website-name {
+  font-weight: normal;
+  color: #555;
+}
+
+#banner {
+  background-color: #ff9c6d; /* Orange from palette for inactive by default */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+#banner.active {
+  background-color: #4CAF50; /* Green for active */
+}
+
+#banner.inactive {
+  background-color: #ff9c6d; /* Orange from palette for inactive */
+}
+
+#features {
+  padding: 20px;
+  background-color: white;
+  display: block;
+}
+
+#features div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#features label {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 40px; /* Increased margin for more spacing */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background-color: #fd5959; /* Red from palette */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px #fd5959; /* Red from palette */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Text next to the slider */
+#features div {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Ensure the features container has a white background and proper spacing */
+#features p {
+  margin: 0;
+  padding: 10px 0;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+} 
